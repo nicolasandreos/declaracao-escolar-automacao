@@ -1,4 +1,3 @@
-```markdown
 # 📄 Automação de Declarações Escolares
 
 Este projeto automatiza a geração de declarações escolares personalizadas em arquivos `.docx`, utilizando um modelo base e uma lista de nomes. As declarações geradas são salvas automaticamente e podem ser enviadas para impressão em lote.
@@ -16,19 +15,6 @@ Este projeto automatiza a geração de declarações escolares personalizadas em
 
 ---
 
-## 📁 Estrutura de Pastas
-
-```
-
-AutomacaoWord/
-├── Declaracao Escolar.docx       # Modelo base com placeholders
-├── nomes.txt                     # Lista de nomes (um por linha)
-├── script.py                     # Script principal
-├── Declaracoes/                  # Saída dos documentos gerados
-└── README.md
-
-````
-
 ---
 
 ## 📦 Requisitos
@@ -42,65 +28,34 @@ Instale com:
 
 ```bash
 pip install python-docx pywin32
-````
 
----
+🛠️ Como usar
+Prepare o arquivo nomes.txt com um nome por linha:
 
-## 🛠️ Como usar
-
-1. **Prepare o arquivo `nomes.txt`** com um nome por linha:
-
-```
+Copy
+Edit
 João da Silva
 Maria Oliveira
 Carlos Souza
-```
+Prepare o modelo Declaração Escolar.docx com os seguintes placeholders:
 
-2. **Prepare o modelo `Declaração Escolar.docx`** com os seguintes placeholders:
-
-```
+less
+Copy
+Edit
 Declaramos para os devidos fins que [NOME] está regularmente matriculado na instituição.
 Cidade: [CIDADE], [DIA] de [MES] de [ANO].
-```
+Execute o script:
 
-3. **Execute o script**:
-
-```bash
+bash
+Copy
+Edit
 python script.py
-```
+Digite a cidade quando solicitado.
 
-4. **Digite a cidade** quando solicitado.
+Os arquivos .docx serão gerados automaticamente na pasta Declaracoes/.
 
-5. Os arquivos `.docx` serão gerados automaticamente na pasta `Declaracoes/`.
-
----
-
-## 🖨️ Impressão automática (opcional)
-
+🖨️ Impressão automática (opcional)
 Após gerar os arquivos, o script oferece a opção de imprimir automaticamente os documentos utilizando a impressora selecionada pelo usuário.
 
-> ⚠️ Necessário estar no **Windows** com o **Microsoft Word instalado**.
+⚠️ Necessário estar no Windows com o Microsoft Word instalado.
 
----
-
-## 👨‍💻 Autor
-
-Desenvolvido por \[Seu Nome Aqui].
-
----
-
-## 📄 Licença
-
-Este projeto é livre para uso pessoal ou educacional. Para fins comerciais, consulte o autor.
-
-```
-
----
-
-Se quiser, posso:
-- Inserir seu nome automaticamente.
-- Criar um logo simples para o projeto.
-- Incluir prints (imagens) ou GIFs mostrando como funciona.
-
-Quer personalizar mais?
-```
