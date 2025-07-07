@@ -28,7 +28,7 @@ Instale com:
 
 ```bash
 pip install python-docx pywin32
-
+```
 🛠️ Como usar
 Prepare o arquivo nomes.txt com um nome por linha:
 
