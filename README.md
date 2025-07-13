@@ -27,33 +27,51 @@ Instale com:
 ```bash
 pip install python-docx pywin32
 ```
-## 🛠️ Como usar
-Prepare o arquivo nomes.txt com um nome por linha:
 
-Copy
-Edit
+Ótimo ponto! Essa seção realmente pode ser mais clara, fluida e bem formatada.
+
+Aqui está a versão **melhorada e mais profissional** da seção **“Como usar”**, com uma linguagem direta, visualmente agradável e sem repetições confusas:
+
+---
+
+## 🛠️ Como usar
+
+### 1. Crie o arquivo `nomes.txt`
+
+Liste um nome por linha, por exemplo:
+
+```
 João da Silva
 Maria Oliveira
 Carlos Souza
-Prepare o modelo Declaração Escolar.docx com os seguintes placeholders:
+```
 
-less
-Copy
-Edit
-Declaramos para os devidos fins que [NOME] está regularmente matriculado na instituição.
-Cidade: [CIDADE], [DIA] de [MES] de [ANO].
-Execute o script:
+### 2. Prepare o modelo Word
 
-bash
-Copy
-Edit
+O projeto já usa um arquivo chamado `Declaração Escolar.docx` com todos os **placeholders** necessários, como:
+
+* `[NOME]`
+* `[CIDADE]`
+* `[DIA]`
+* `[MES]`
+* `[ANO]`
+
+Esses placeholders serão automaticamente **substituídos pelos valores reais** durante a geração dos documentos.
+
+> 💡 **Quer mudar o layout do documento?**
+> Basta abrir o `Declaração Escolar.docx` no Word e mover os placeholders para onde quiser, ou adicionar/remover conforme necessário — apenas mantenha os nomes entre colchetes, como `[NOME]`.
+
+### 3. Execute o script
+
+No terminal, rode:
+
+```bash
 python script.py
-Digite a cidade quando solicitado.
+```
 
-Os arquivos .docx serão gerados automaticamente na pasta Declaracoes/.
+Você será solicitado a digitar a cidade da instituição. O restante (data, mês, ano) será preenchido automaticamente com base na data atual do sistema.
 
-🖨️ Impressão automática (opcional)
-Após gerar os arquivos, o script oferece a opção de imprimir automaticamente os documentos utilizando a impressora selecionada pelo usuário.
+### 4. Resultado
 
-⚠️ Necessário estar no Windows com o Microsoft Word instalado.
+Os arquivos `.docx` personalizados serão salvos automaticamente na pasta `Declaracoes/`, prontos para envio ou impressão.
 
