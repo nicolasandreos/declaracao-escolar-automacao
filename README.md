@@ -36,7 +36,42 @@ Aqui está a versão **melhorada e mais profissional** da seção **“Como usar
 
 ## 🛠️ Como usar
 
-### 1. Crie o arquivo `nomes.txt`
+1. **Crie uma nova pasta** e abra em uma IDE (recomendado: [Visual Studio Code](https://code.visualstudio.com/)).
+
+2. **Crie um ambiente virtual (opcional, mas recomendado):**
+
+```bash
+python -m venv venv
+```
+
+Ative o ambiente virtual:
+
+* No **Windows** (cmd ou PowerShell):
+
+```bash
+venv\Scripts\activate
+```
+
+> ⚠️ Se a execução estiver desabilitada no PowerShell, execute:
+>
+> ```powershell
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+> ```
+
+3. **Clone este repositório (requer o Git instalado):**
+
+```bash
+git clone https://github.com/nicolasandreos/declaracao-escolar-automacao
+cd declaracao-escolar-automacao
+```
+
+4. **Instale as dependências do projeto:**
+
+```bash
+pip install -r requirements.txt
+```
+
+5. **Abra o arquivo `nomes.txt`**
 
 Liste um nome por linha, por exemplo:
 
@@ -46,7 +81,7 @@ Maria Oliveira
 Carlos Souza
 ```
 
-### 2. Prepare o modelo Word
+6. **Prepare o modelo Word**
 
 O projeto já usa um arquivo chamado `Declaração Escolar.docx` com todos os **placeholders** necessários, como:
 
@@ -61,7 +96,7 @@ Esses placeholders serão automaticamente **substituídos pelos valores reais** 
 > 💡 **Quer mudar o layout do documento?**
 > Basta abrir o `Declaração Escolar.docx` no Word e mover os placeholders para onde quiser, ou adicionar/remover conforme necessário — apenas mantenha os nomes entre colchetes, como `[NOME]`.
 
-### 3. Execute o script
+7. **Execute o script**
 
 No terminal, rode:
 
@@ -71,7 +106,7 @@ python script.py
 
 Você será solicitado a digitar a cidade da instituição. O restante (data, mês, ano) será preenchido automaticamente com base na data atual do sistema.
 
-### 4. Resultado
+8. **Resultado**
 
 Os arquivos `.docx` personalizados serão salvos automaticamente na pasta `Declaracoes/`, prontos para envio ou impressão.
 
