@@ -15,21 +15,19 @@ Este projeto automatiza a geração de declarações escolares personalizadas em
 
 ---
 
----
-
 ## 📦 Requisitos
 
 - Python 3.8+
 - Word instalado (para impressão funcionar corretamente)
 
-### 📚 Bibliotecas necessárias:
+## 📚 Bibliotecas necessárias:
 
 Instale com:
 
 ```bash
 pip install python-docx pywin32
 ```
-##🛠️ Como usar
+## 🛠️ Como usar
 Prepare o arquivo nomes.txt com um nome por linha:
 
 Copy
