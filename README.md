@@ -62,7 +62,7 @@ venv\Scripts\activate
 
 ```bash
 git clone https://github.com/nicolasandreos/declaracao-escolar-automacao
-cd declaracao-escolar-automacao
+cd declaracao-escolar-automacao/AutomacaoDeclaracoes
 ```
 
 4. **Instale as dependências do projeto:**
